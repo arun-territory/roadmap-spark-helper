@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Roadmap from "./pages/Roadmap";
+import BasicRoadmap from "./pages/BasicRoadmap";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/basic-roadmap" element={<BasicRoadmap />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
