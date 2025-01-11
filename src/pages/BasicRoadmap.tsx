@@ -35,7 +35,7 @@ const RoadmapCard = ({ week, title, icon: Icon, description, tasks, color }: {
         <Button 
           onClick={() => alert(`Starting ${title}`)} 
           size="sm"
-          variant="outline"
+          variant="default"
           className="text-xs"
         >
           Start
