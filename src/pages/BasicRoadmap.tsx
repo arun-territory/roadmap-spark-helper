@@ -1,6 +1,7 @@
 import React from 'react';
 import { Terminal, Github, Code, Box, Cloud, Database, Server, Shield, Globe, Presentation } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 const RoadmapCard = ({ week, title, icon: Icon, description, tasks, color }: {
   week: number;
@@ -29,6 +30,14 @@ const RoadmapCard = ({ week, title, icon: Icon, description, tasks, color }: {
             <p className="text-sm text-gray-600">{task}</p>
           </div>
         ))}
+      </div>
+      <div className="mt-4">
+        <Button 
+          onClick={() => alert(`Starting ${title}`)} 
+          className="w-full"
+        >
+          Start Section
+        </Button>
       </div>
     </CardContent>
   </Card>
