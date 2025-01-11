@@ -31,12 +31,14 @@ const RoadmapCard = ({ week, title, icon: Icon, description, tasks, color }: {
           </div>
         ))}
       </div>
-      <div className="mt-4">
+      <div className="mt-4 flex justify-end">
         <Button 
           onClick={() => alert(`Starting ${title}`)} 
-          className="w-full"
+          size="sm"
+          variant="outline"
+          className="text-xs"
         >
-          Start Section
+          Start
         </Button>
       </div>
     </CardContent>
